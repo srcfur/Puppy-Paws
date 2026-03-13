@@ -14,16 +14,18 @@ public class NPCDialog : MonoBehaviour, InteractionInterest
         return (transform.position - controller.transform.position).magnitude < interactionDistance && !
         Naninovel.Engine.GetService<IScriptPlayer>().Playing;
     }
-
     public GameObject getGameObject()
     {
         return gameObject;
     }
-
     public void interact(PlayerController controller)
     {
         Debug.Log("UwU");
         Naninovel.Engine.GetService<IScriptPlayer>().MainTrack.LoadAndPlay("TEST_NPC_DIALOG").GetAwaiter().GetResult();
+    }
+    public void OnDestroy()
+    {
+        InteractionRegistry.singleton.Unregister(this);
     }
     public void Start()
     {
