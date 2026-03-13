@@ -29,7 +29,8 @@ sysinfo.txt
 .consulo/
 /*.tmp
 /*.svd
- 
+Logs/*
+Assets/NaninovelData/.nani/Transient/Bridging/Server
 # ============ #
 # OS generated #
 # ============ #
