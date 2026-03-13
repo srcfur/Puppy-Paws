@@ -20,7 +20,7 @@ MonoBehaviour:
   SceneIndependent: 1
   ShowInitializationUI: 0
   CustomInitializationUI: {fileID: 0}
-  EnableBridging: 1
+  EnableBridging: 0
   AutoGenerateMetadata: 1
   EnableDevelopmentConsole: 1
   DebugOnlyConsole: 1

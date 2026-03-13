@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private InputAction action;
-    public Vector3 DesiredDirection = Vector3.zero;
-    public Vector3 Internal_Player_Position = Vector3.zero;
+    float playerMovementSpeed = 1.0f;
+    Vector3 playerDesiredMovementDirection = Vector3.zero;
 
     public RoomHandler current_room;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DesiredDirection = new Vector3(action.ReadValue<Vector2>().x, action.ReadValue<Vector2>().y, 0);
+        playerDesiredMovementDirection = new Vector3(action.ReadValue<Vector2>().x, action.ReadValue<Vector2>().y, 0);
         using (InteractionRegistry.InteractionsResult allInteractionsSortedByDistance = InteractionRegistry.singleton.getAllInterests().sortByDistance(transform.position))
         {
             if (allInteractionsSortedByDistance.count > 0)
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
                 {
                     allInteractionsSortedByDistance.interests[0].interact(this);
                 }
+                GetComponent<Animator>().SetBool("CanInteract", allInteractionsSortedByDistance.interests[0].canInteract(this));
             }
         }
     }
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour
     }
     public void FixedUpdate()
     {
-        transform.position += DesiredDirection * Time.fixedDeltaTime * 2;
+        transform.position += playerDesiredMovementDirection * Time.fixedDeltaTime * playerMovementSpeed;
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
     }
 }

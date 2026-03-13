@@ -11,7 +11,8 @@ public class NPCDialog : MonoBehaviour, InteractionInterest
     public float interactionDistance = 1;
     public bool canInteract(PlayerController controller)
     {
-        return (transform.position - controller.transform.position).magnitude < interactionDistance;
+        return (transform.position - controller.transform.position).magnitude < interactionDistance && !
+        Naninovel.Engine.GetService<IScriptPlayer>().Playing;
     }
 
     public GameObject getGameObject()
