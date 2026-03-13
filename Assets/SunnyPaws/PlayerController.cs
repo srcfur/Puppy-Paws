@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviour
                 }
                 GetComponent<Animator>().SetBool("CanInteract", allInteractionsSortedByDistance.interests[0].canInteract(this));
             }
+            else
+            {
+                GetComponent<Animator>().SetBool("CanInteract", false);
+            }
         }
     }
     private void OnDrawGizmos()
