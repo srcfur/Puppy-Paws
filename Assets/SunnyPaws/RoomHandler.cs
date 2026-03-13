@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class RoomHandler : MonoBehaviour
@@ -25,8 +27,10 @@ public class RoomHandler : MonoBehaviour
         }
         AsyncOperation loading = SceneManager.LoadSceneAsync(scene_id, new LoadSceneParameters() { loadSceneMode = LoadSceneMode.Additive, localPhysicsMode = LocalPhysicsMode.None });
 
-        SceneManager.sceneLoaded += (newscene, loadmode) => { if (loadmode == LoadSceneMode.Additive) { scene = newscene; } };
+        UnityAction<Scene, LoadSceneMode> action = (newscene, loadmode) => { if (loadmode == LoadSceneMode.Additive) { scene = newscene; Debug.Log("Got new scene!"); } };
+        SceneManager.sceneLoaded += action;
         yield return loading;
+        SceneManager.sceneLoaded -= action;
         if (unloadOperation != null)
         {
             if (!unloadOperation.isDone)
