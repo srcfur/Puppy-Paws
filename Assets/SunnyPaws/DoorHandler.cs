@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DoorHandler : MonoBehaviour, InteractionInterest
 {
+    [SerializeField] private RoomDefinition target_room;
+    [SerializeField] private Vector3 target_position;
     private List<GameObject> gameObjectsInArea = new List<GameObject>();
     public bool canInteract(PlayerController controller)
     {
@@ -17,7 +19,8 @@ public class DoorHandler : MonoBehaviour, InteractionInterest
 
     public void interact(PlayerController controller)
     {
-        RoomHandler.singleton.LoadRoomDefinition(new RoomDefinition() { scene_id = "TEST_WC" });
+        RoomHandler.singleton.LoadRoomDefinition(target_room);
+        controller.transform.position = target_position;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
