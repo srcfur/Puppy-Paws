@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5cdfa2463f0b3824abce0c040016a60c
+guid: ef9efbc12bf513749be061197833415e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2357562022729870717
-    second: YCH_Regressed_0
+      213: -3307162654271181544
+    second: Roomtest_4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: YCH_Regressed_0
+      name: Roomtest_4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 83
-        height: 156
+        width: 371
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3821c3bc4d1484fd0800000000000000
-      internalID: -2357562022729870717
+      spriteID: 81d6ab986199a12d0800000000000000
+      internalID: -3307162654271181544
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      YCH_Regressed_0: -2357562022729870717
+      Roomtest_4_0: -3307162654271181544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

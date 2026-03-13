@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5cdfa2463f0b3824abce0c040016a60c
+guid: 401098196903c6f429995d9600e8502a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2357562022729870717
-    second: YCH_Regressed_0
+      213: -8030835215644163416
+    second: car_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 1200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: YCH_Regressed_0
+      name: car_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 83
-        height: 156
+        width: 1600
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3821c3bc4d1484fd0800000000000000
-      internalID: -2357562022729870717
+      spriteID: 8a205d9abedbc8090800000000000000
+      internalID: -8030835215644163416
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      YCH_Regressed_0: -2357562022729870717
+      car_0: -8030835215644163416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5cdfa2463f0b3824abce0c040016a60c
+guid: dc38195acc8f6594cb330a6b39a379b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2357562022729870717
-    second: YCH_Regressed_0
+      213: -711526296252736865
+    second: Wimpy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: YCH_Regressed_0
+      name: Wimpy_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 83
-        height: 156
+        width: 41
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3821c3bc4d1484fd0800000000000000
-      internalID: -2357562022729870717
+      spriteID: f9a91877a962026f0800000000000000
+      internalID: -711526296252736865
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      YCH_Regressed_0: -2357562022729870717
+      Wimpy_0: -711526296252736865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
