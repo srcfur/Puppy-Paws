@@ -45,3 +45,6 @@ ehthumbs.db
 Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
 UserSettings/Layouts/default-6000.dwlt
+/Logs
+*.dwlt
+*.log

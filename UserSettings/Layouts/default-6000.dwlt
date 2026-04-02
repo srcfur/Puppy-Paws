@@ -1023,8 +1023,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 260
-    y: 79
+    x: 261
+    y: 24
     width: 1764
     height: 739
   m_SerializedDataModeController:
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 259
     height: 739
   m_SerializedDataModeController:
@@ -1142,8 +1142,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: caa4ffff
-      m_LastClickedID: -23350
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 00fbffff7cc5000098c50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1949,7 +1949,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 34c60000
     m_LastClickedID: 50740
-    m_ExpandedIDs: 0000000030c6000032c6000034c6000036c6000038c600003ac600003cc600003ec6000040c6000042c6000044c6000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000052c6000054c6000056c6000058c600005ac600005cc600005ec6000060c6000062c6000064c6000066c60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1978,7 +1978,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030c6000032c6000034c6000036c6000038c600003ac600003cc600003ec6000040c6000042c6000044c60000
+    m_ExpandedIDs: 0000000052c6000054c6000056c6000058c600005ac600005cc600005ec6000060c6000062c6000064c6000066c60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2058,7 +2058,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 844
+    y: 789
     width: 2025
     height: 502
   m_SerializedDataModeController:
@@ -2093,8 +2093,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2026
-    y: 79
+    x: 2027
+    y: 24
     width: 533
     height: 1267
   m_SerializedDataModeController:
