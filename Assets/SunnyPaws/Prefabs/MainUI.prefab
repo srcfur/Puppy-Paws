@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5795304644524614502}
   - component: {fileID: 1759194130123840045}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: BABY_BUTTON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 8525647054475361931}
   - component: {fileID: 2530210801733470105}
   - component: {fileID: 5590865560114959844}
+  - component: {fileID: 2637021309396585250}
   m_Layer: 0
   m_Name: PlayerMenu
   m_TagString: Untagged
@@ -619,6 +620,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9db753a04be714e9d39588e54c17ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMenuHandler
+--- !u!114 &2637021309396585250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681426444029882482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd1acfeb7c3ac54ab6252f19f7f6558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryMenuHandler
+  InventoryHoverSprite: {fileID: -682504498612627808, guid: a7dadc6491757b341b5511e35abbb3c1, type: 3}
+  TestSprite: {fileID: -674273629139536303, guid: a7dadc6491757b341b5511e35abbb3c1, type: 3}
 --- !u!1 &2711602096334203458
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +647,7 @@ GameObject:
   - component: {fileID: 3940685665220964595}
   - component: {fileID: 3736060149548812854}
   m_Layer: 0
-  m_Name: Button
+  m_Name: STAT_BUTTON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -753,7 +768,7 @@ GameObject:
   - component: {fileID: 5122090770942742872}
   - component: {fileID: 7010268598479944776}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: INV_BUTTON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -860,7 +875,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5122090770942742872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5590865560114959844}
+        m_TargetAssemblyTypeName: PlayerMenuHandler, Assembly-CSharp
+        m_MethodName: OpenNewMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2637021309396585250}
+          m_ObjectArgumentAssemblyTypeName: MenuHandler, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4993245504543712194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1739,7 @@ GameObject:
   - component: {fileID: 2205848797522934242}
   - component: {fileID: 3922772756784485702}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: Tabs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

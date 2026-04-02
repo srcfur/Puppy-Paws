@@ -1,20 +1,23 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class PlayerMenuHandler : MonoBehaviour
 {
-    public KeyValuePair<Button, IMenuHandler>[] Menus;
-    private IMenuHandler _CurrentlyOpenedMenu;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private MenuHandler _CurrentlyOpenedMenu;
+    public void CloseCurrentMenu()
     {
-        
+        _CurrentlyOpenedMenu.CloseMenu();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void OpenNewMenu(MenuHandler newmenu)
     {
-        
+        if(_CurrentlyOpenedMenu != null)
+        {
+            _CurrentlyOpenedMenu.CloseMenu();
+        }
+        _CurrentlyOpenedMenu = newmenu;
+        _CurrentlyOpenedMenu.OpenMenu();
     }
 }
